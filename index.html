@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 | 江南大学 转专业申请·自动化</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', "PingFang SC", "Microsoft YaHei", sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 3rem;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 2rem;
+            height: fit-content;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 240px;
+            height: 240px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .sidebar h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .role {
+            color: #005ea5;
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+            font-weight: 500;
+        }
+
+        .affiliation {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-card {
+            background-color: #f0f4f8;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+
+        .info-card h3 {
+            font-size: 0.95rem;
+            margin-bottom: 0.6rem;
+            color: #005ea5;
+        }
+
+        .info-card ul {
+            list-style: none;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        .info-card li {
+            margin-bottom: 0.35rem;
+        }
+
+        .main-content {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .top-nav {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            font-size: 0.95rem;
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: #666;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .top-nav a.active {
+            background-color: #e6f0fa;
+            color: #005ea5;
+            font-weight: 500;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+            color: #1d1d1f;
+            border-left: 4px solid #005ea5;
+            padding-left: 0.8rem;
+        }
+
+        .text-content p {
+            margin-bottom: 1rem;
+            color: #333;
+            text-align: justify;
+        }
+
+        .item-card {
+            background-color: #f9fafb;
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .item-card h4 {
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+            color: #005ea5;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+        section {
+            scroll-margin-top: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/4b1af4fb6e0845448428bb0633d86baa.jpg~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202604272041175768636EEB33FDA97C5B&rrcfp=dafada99&x-expires=2093517678&x-signature=gll%2BCjOxH0CDzIY140lfBd5%2Bq18%3D" alt="个人头像" class="avatar">
+            <h1>张晰萌</h1>
+            <p class="role">自动化专业 转专业申请</p>
+            <p class="affiliation">江南大学 · 大一本科生</p>
+
+            <div class="info-card">
+                <h3>个人学业概况</h3>
+                <ul>
+                    <li>高考选科：物化生</li>
+                    <li>上学期绩点：3.83</li>
+                    <li>专业排名：年级第3名</li>
+                    <li>英语四级：633分</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="top-nav">
+                <a href="#intro" class="active">个人简介</a>
+                <a href="#reason">转专业初心</a>
+                <a href="#ability">学业能力</a>
+                <a href="#plan">学习规划</a>
+                <a href="#quality">综合素质</a>
+            </div>
+
+            <section id="intro">
+                <h2 class="section-title">个人简介</h2>
+                <div class="text-content">
+                    <p>我是江南大学大一本科生，江苏物化生组合考生，高中阶段长期接触物理、化学、生物理科体系，具备扎实的理科逻辑思维与数理基础，擅长逻辑推导、理科学习与系统性知识梳理，适配自动化专业的学习模式。</p>
+                    <p>入学以来，我始终保持高度自律的学习状态，上学期综合绩点3.83，位列专业第三名；英语四级考试取得633分，具备优秀的英文文献阅读、资料查阅与专业术语理解能力，能够满足自动化专业双语学习、前沿技术研读的需求。</p>
+                    <p>性格踏实沉稳、自律性强，做事有条理，具备良好的自主学习能力与抗压能力，愿意投入时间深耕工科知识，希望通过转专业，正式投身自动化领域学习。</p>
+                </div>
+            </section>
+
+            <section id="reason" style="margin-top: 2.5rem;">
+                <h2 class="section-title">转专业申请初心</h2>
+                <div class="text-content">
+                    <p>作为物化生考生，我长期对物理学科、控制系统、智能设备、机械电气联动装置抱有浓厚兴趣。自动化是一门融合控制理论、电子技术、计算机技术、智能算法的核心工科专业，契合我的理科思维优势与长期发展向往。</p>
+                    <p>在大一学习过程中，我清晰认知到自身更适合工科逻辑导向的学习模式，相较于原专业，自动化的课程体系、实践应用、工程逻辑更贴合个人兴趣与未来职业规划。当下智能制造、工业自动化、智能控制系统高速发展，自动化专业就业面广、硬核实力强，具备极高的学习价值与发展前景。</p>
+                    <p>因此我坚定申请转入自动化专业，希望依托学校优质的工科资源，补齐电路、自控原理、编程、嵌入式等核心能力，成为复合型工科人才。</p>
+                </div>
+            </section>
+
+            <section id="ability" style="margin-top: 2.5rem;">
+                <h2 class="section-title">学业优势与适配能力</h2>
+                <div class="item-card">
+                    <h4>扎实的理科基础</h4>
+                    <p class="item-desc">物化生选科奠定良好物理、数理逻辑基础，适应高等数学、工程数学、自控原理等工科核心课程的学习节奏。</p>
+                </div>
+                <div class="item-card">
+                    <h4>优异的学习态度与成绩</h4>
+                    <p class="item-desc">绩点3.83、专业前三，学习能力强，自律高效，能够快速适应跨专业课程衔接，弥补前置课程差距。</p>
+                </div>
+                <div class="item-card">
+                    <h4>高水平英语能力</h4>
+                    <p class="item-desc">四级633分，可熟练阅读自动化外文教材、行业论文、技术手册，适配工科前沿学习需求。</p>
+                </div>
+            </section>
+
+            <section id="plan" style="margin-top: 2.5rem;">
+                <h2 class="section-title">转入自动化后学习规划</h2>
+                <div class="text-content">
+                    <p>第一，快速补修自动化专业前置基础课程，自学电路原理、C语言程序设计、工程制图等内容，不掉队、不落后。</p>
+                    <p>第二，深耕专业核心课程，吃透自动控制原理、现代控制技术、单片机、嵌入式系统、传感器检测等主干内容，夯实工科核心素养。</p>
+                    <p>第三，积极参与学科竞赛、科创项目、实验室科研，依托自动化平台锻炼动手实践、工程实操与团队协作能力。</p>
+                    <p>第四，长期规划深耕智能控制、工业智能方向，兼顾理论学习与实践创新，为后续升学、就业、科创发展筑牢基础。</p>
+                </div>
+            </section>
+
+            <section id="quality" style="margin-top: 2.5rem;">
+                <h2 class="section-title">综合素质</h2>
+                <div class="text-content">
+                    <p>日常严于律己，时间规划清晰，具备极强的自主学习能力；待人踏实稳重，善于沟通协作，能够快速融入新班级与新的专业学习集体。面对跨专业的学习压力，我有充足的心理准备与执行力，愿意付出额外时间追赶课程、夯实基础，保证高质量完成自动化专业全部培养要求。</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const navLinks = document.querySelectorAll('.top-nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
